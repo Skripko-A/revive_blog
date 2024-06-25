@@ -26,9 +26,9 @@
               <div class="col-4">
                 <div class="card">
                   {% if post.image_url %}
-                    <img src="{{post.image_url}}" class="card-img-top" alt="...">
+                    <img src="{{post.image_url}}" class="card-img-top" alt="{{post.title}} image">
                   {% else %}
-                    <img src="{% static 'img/banner/blog.png' %}" class="card-img-top" alt="...">
+                    <img src="{% static 'img/banner/blog.png' %}" class="card-img-top" alt="default blog image">
                   {% endif %}
                   <div class="card-body">
                     <h5 class="card-title">{{post.title}}</h5>
@@ -52,9 +52,9 @@
                 <div class="single-recent-blog-post">
                   <div class="thumb">
                     {% if post.image_url %}
-                      <img src="{{post.image_url}}" class="card-img-top" alt="...">
+                      <img src="{{post.image_url}}" class="card-img-top" alt="{{post.title}} image">
                     {% else %}
-                      <img src="{% static 'img/banner/blog.png' %}" class="card-img-top" alt="...">
+                      <img src="{% static 'img/banner/blog.png' %}" class="card-img-top" alt="default blog image">
                     {% endif %}
                     <ul class="thumb-info" style="max-width:550px;">
                       <li><a href="#"><i class="ti-user"></i>{{post.author}}</a></li>
