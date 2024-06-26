@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{% static 'styles.min.css' %}">
   </head>
   <body>
-      <!--================Header Menu Area =================-->
+    <!--================Header Menu Area =================-->
     <header class="header_area">
       <div class="main_menu">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -16,9 +16,9 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <a class="navbar-brand logo_h" href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
             </button>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
@@ -38,12 +38,10 @@
       </div>
     </header>
     <!--================Header Menu Area =================-->
-  <main class="site-main">
-
-    {% block content%}
-    {% endblock %}
-
-  </main>
+    <main class="site-main">
+      {% block content%}
+      {% endblock %}
+    </main>
     <!--================ Start Footer Area =================-->
     <footer class="footer-area section-padding">
       <div class="container">
@@ -57,7 +55,6 @@
               </p>
             </div>
           </div>
-
           <div class="col-lg-4  col-md-6 col-sm-6">
             <div class="single-footer-widget">
               <h6>Newsletter</h6>
@@ -78,7 +75,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-lg-3  col-md-6 col-sm-6">
           </div>
           <div class="col-lg-2 col-md-6 col-sm-6">
@@ -87,25 +83,27 @@
               <p>Let us be social</p>
               <div class="footer-social d-flex align-items-center">
                 <a href="#">
-                  <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-facebook-f"></i>
                 </a>
                 <a href="#">
-                  <i class="fab fa-twitter"></i>
+                <i class="fab fa-twitter"></i>
                 </a>
                 <a href="#">
-                  <i class="fab fa-dribbble"></i>
+                <i class="fab fa-dribbble"></i>
                 </a>
                 <a href="#">
-                  <i class="fab fa-behance"></i>
+                <i class="fab fa-behance"></i>
                 </a>
               </div>
             </div>
           </div>
         </div>
         <div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
-          <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          <p class="footer-text m-0">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
         </div>
       </div>
     </footer>
